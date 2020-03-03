@@ -6,7 +6,7 @@ using namespace std;
 int main () {
     while (true){
         time_t now_time = time(NULL); 
-        printf ("%s: This is a test journal.\n", ctime(&now_time));
-        sleep (1);
+        printf ("This is a test journal: %s", ctime(&now_time));
+        usleep(100000);
     }
 }
