@@ -1,4 +1,4 @@
-FROM gcc:9.2 as build
+FROM gcc:12.1 as build
 WORKDIR /build
 ADD logs.cc /build
 RUN g++ -static logs.cc -o logs
